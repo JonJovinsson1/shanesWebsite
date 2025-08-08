@@ -1,2 +1,0 @@
-# shanesWebsite
-Shanes website.
