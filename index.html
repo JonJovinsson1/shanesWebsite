@@ -1,83 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shanes Concreting Services | Reliable Concreting Services</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shanes Concrete Services</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="bg-gray-50 text-gray-800">
-  <!-- Header -->
-  <header class="bg-white shadow">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-gray-900">Shanes Concreteing Services</h1>
-      <nav>
-        <ul class="flex space-x-6 text-sm">
-          <li><a href="#services" class="hover:text-blue-600">Services</a></li>
-          <li><a href="#about" class="hover:text-blue-600">About</a></li>
-          <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
-        </ul>
-      </nav>
+<body>
+  <header class="site-header">
+    <div class="container header__inner">
+      <img src="/logos/NewLogo.jpeg" alt="Shanes Concrete Services Logo" class="logo">
     </div>
   </header>
-
-  <!-- Hero Section -->
-  <section class="bg-gray-100 py-16">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h2 class="text-4xl font-bold mb-4">Professional Concreting Services</h2>
-      <p class="text-lg mb-6">Driveways, slabs, paths & more – built to last with quality craftsmanship.</p>
-      <a href="#contact" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Get a Free Quote</a>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="py-16">
-    <div class="max-w-7xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold mb-8">Our Services</h3>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white shadow p-6 rounded">
-          <h4 class="font-bold text-xl mb-2">Driveways</h4>
-          <p>Durable and stylish concrete driveways that boost curb appeal.</p>
-        </div>
-        <div class="bg-white shadow p-6 rounded">
-          <h4 class="font-bold text-xl mb-2">Concrete Slabs</h4>
-          <p>Foundations for sheds, patios, and more with precision and strength.</p>
-        </div>
-        <div class="bg-white shadow p-6 rounded">
-          <h4 class="font-bold text-xl mb-2">Pathways & Patios</h4>
-          <p>Functional and attractive paths and outdoor living areas.</p>
-        </div>
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <h1>Expert Solutions for Every Project</h1>
+        <p class="lead">Residential, commercial &amp; decorative concrete across Western Australia. Free quotes.</p>
+        <a href="tel:+61456527380" class="btn btn--primary">Call Now</a>
       </div>
+    </section>
+
+    <section id="services" class="container services">
+      <h2>Our Services</h2>
+      <div class="grid">
+      <article class="card">
+        <h3>Driveways</h3>
+        <p>Concrete and decorative finishes built to last.</p>
+      </article>
+
+      <article class="card">
+        <h3>Liquid Limestone</h3>
+        <p>Low-maintenance, textured finishes for pool surrounds &amp; patios.</p>
+      </article>
+
+      <article class="card">
+        <h3>Polished Concrete</h3>
+        <p>High-gloss, durable interior floors with variable sheen levels.</p>
+      </article>
+
+      <article class="card">
+        <h3>Honed Finish</h3>
+        <p>Satin-smooth surface with reduced glare — elegant and slip-resistant.</p>
+      </article>
+
+      <article class="card">
+        <h3>Exposed Aggregate</h3>
+        <p>Decorative stone-in-surface finish for texture and traction.</p>
+      </article>
+
+      <article class="card">
+        <h3>Colored Concrete</h3>
+        <p>Integral or surface-applied pigments for lasting color options.</p>
+      </article>
+
+      <article class="card">
+        <h3>Pool Decks</h3>
+        <p>Durable, slip-resistant finishes designed for wet environments.</p>
+      </article>
+
+
+      <article class="card">
+        <h3>Resurfacing &amp; Overlays</h3>
+        <p>Renew existing concrete with bonded overlays or micro-toppings.</p>
+      </article>
+
+      <article class="card">
+        <h3>Structural Slabs &amp; Foundations</h3>
+        <p>Engineered footings, suspended slabs and reinforced foundations.</p>
+      </article>
+
+      <article class="card">
+        <h3>Stairs &amp; Steps</h3>
+        <p>Cast-in-place, precast or formed steps with non-slip finishes.</p>
+      </article>
+
+      <article class="card">
+        <h3>Reinforced Concrete</h3>
+        <p>Steel-reinforced works for greater load capacity and durability.</p>
+      </article>
+
+      <article class="card">
+        <h3>Grinding &amp; Leveling</h3>
+        <p>Surface preparation for polishing or to correct uneven slabs.</p>
+      </article>
+      </div>
+    </section>
+
+  <section id="projects" class="container projects">
+    <h2>Recent Projects</h2>
+    <div class="project-slider" id="project-slider"></div>
+    <div class="slider-controls">
+      <button id="prev-btn" aria-label="Previous">&#10094;</button>
+      <button id="next-btn" aria-label="Next">&#10095;</button>
     </div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="bg-gray-100 py-16">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold mb-6">Why Choose Us?</h3>
-      <p class="text-lg">With over 10 years of experience, We delivers high-quality concreting solutions with a focus on reliability, durability, and customer satisfaction.</p>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- Contact Section -->
-  <section id="contact" class="py-16">
-    <div class="max-w-3xl mx-auto px-4 text-center">
-      <h3 class="text-3xl font-semibold mb-6">Contact Us</h3>
-      <p class="mb-4">Ready to start your project? Reach out for a free quote.</p>
-      <form class="space-y-4">
-        <input type="text" placeholder="Name" class="w-full border p-3 rounded" />
-        <input type="email" placeholder="Email" class="w-full border p-3 rounded" />
-        <textarea rows="4" placeholder="Your message" class="w-full border p-3 rounded"></textarea>
-        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Send Message</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-white shadow mt-16">
-    <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
-      &copy; 2025 ConcretePro. All rights reserved.
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Shanes Concrete Services - 0456 527 380</p>
     </div>
   </footer>
+
+  <!-- Load image manifest -->
+<script src="/gallery/gallery.js"></script>
+<script>
+  const slider = document.getElementById('project-slider');
+
+  // Populate from manifest
+  (window.GALLERY_IMAGES || []).forEach(path => {
+    const fig = document.createElement('figure');
+    fig.className = 'project';
+    const caption = path
+      .replace(/^gallery\//, '')
+      .replace(/\.[^.]+$/, '')
+      .replace(/[\/_-]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    fig.innerHTML = `
+      <img src="/${path}" alt="${caption}">
+      <figcaption>${caption}</figcaption>
+    `;
+    slider.appendChild(fig);
+  });
+
+  // Slider controls
+  const scrollAmount = slider.clientWidth * 0.9;
+  document.getElementById('prev-btn').onclick = () => slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  document.getElementById('next-btn').onclick = () => slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+</script>
 </body>
 </html>
