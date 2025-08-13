@@ -153,11 +153,20 @@ body{margin:0;background:#fafafa;color:#222}
   height: clamp(80px, 20vw, 400px); /* min 80px, max 200px, scales with screen */
   width: auto;
   display: block;
-  margin: 0 auto; /* keeps it centered */
+  margin: 0 auto; 
+  z-index: 1;
 }
 .header__inner {
   display: flex;
   align-items: center;
   justify-content: center; /* centers horizontally */
   flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+img[src*="NewLogo1.png"] {
+  height: clamp(200px, 25vw, 500px); /* larger range */
+  width: auto;
+  display: block;
+  margin: 0 auto;
+  z-index: 1;
 }
