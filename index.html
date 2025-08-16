@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+
   <header class="site-header">
     <div class="container header__inner">
       <img src="/logos/NewLogo1.png" alt="Shanes Concrete Services Logo" class="logo">
@@ -22,57 +26,73 @@
     </section>
 
     <section id="services" class="container services">
-      <img src="/logos/header1.jpeg" alt="Shanes Concrete Services Logo" class="logo">
       <h2>Our Services</h2>
         <p>
         We provide a full range of concrete services including durable driveways, low-maintenance liquid limestone for pool surrounds and patios, high-gloss polished concrete, and elegant honed finishes. We also offer exposed aggregate for added texture and traction, coloured concrete in a variety of tones, and slip-resistant pool decks. Our team handles resurfacing and overlays to renew existing slabs, as well as structural slabs and foundations, cast-in-place or precast stairs and steps, and reinforced concrete for maximum strength.
         </p>
     </section>
 
-  <section id="projects" class="container projects">
-    <h2>Recent Projects</h2>
-    <div class="project-slider" id="project-slider"></div>
-    <div class="slider-controls">
-      <button id="prev-btn" aria-label="Previous">&#10094;</button>
-      <button id="next-btn" aria-label="Next">&#10095;</button>
-    </div>
-  </section>
-
+    <section id="projects" class="container projects">
+      <h2>Recent Projects</h2>
+      <div class="project-slider" id="project-slider"></div>
+      <div class="slider-controls">
+        <button id="prev-btn" aria-label="Previous">&#10094;</button>
+        <button id="next-btn" aria-label="Next">&#10095;</button>
+      </div>
     </section>
+
+    <!-- Facebook Page Embed Section -->
+    <section id="facebook-feed" class="container facebook-feed">
+      <h2>Follow Us on Facebook</h2>
+      <div class="fb-page" 
+           data-href="https://www.facebook.com/p/Shanes-Concrete-Services-100091208202583/" 
+           data-tabs="timeline" 
+           data-width="" 
+           data-height="" 
+           data-small-header="false" 
+           data-adapt-container-width="true" 
+           data-hide-cover="false" 
+           data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/p/Shanes-Concrete-Services-100091208202583/" class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/p/Shanes-Concrete-Services-100091208202583/">Shanes Concrete Services</a>
+        </blockquote>
+      </div>
+    </section>
+    
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Shanes Concrete Services - 0456 527 380</p>
+      <p>&copy; <span id="year"></span> Shanes Concrete Services - 0456 527 380 - ABN: 54 612 829 365</p>
     </div>
   </footer>
 
   <!-- Load image manifest -->
-<script src="/gallery/gallery.js"></script>
-<script>
-  const slider = document.getElementById('project-slider');
+  <script src="/gallery/gallery.js"></script>
+  <script>
+    const slider = document.getElementById('project-slider');
 
-  // Populate from manifest
-  (window.GALLERY_IMAGES || []).forEach(path => {
-    const fig = document.createElement('figure');
-    fig.className = 'project';
-    const caption = path
-      .replace(/^gallery\//, '')
-      .replace(/\.[^.]+$/, '')
-      .replace(/[\/_-]/g, ' ')
-      .replace(/\s+/g, ' ')
-      .trim();
-    fig.innerHTML = `
-      <img src="/${path}" alt="${caption}">
-      <figcaption>${caption}</figcaption>
-    `;
-    slider.appendChild(fig);
-  });
+    // Populate from manifest
+    (window.GALLERY_IMAGES || []).forEach(path => {
+      const fig = document.createElement('figure');
+      fig.className = 'project';
+      const caption = path
+        .replace(/^gallery\//, '')
+        .replace(/\.[^.]+$/, '')
+        .replace(/[\/_-]/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
+      fig.innerHTML = `
+        <img src="/${path}" alt="${caption}">
+        <figcaption>${caption}</figcaption>
+      `;
+      slider.appendChild(fig);
+    });
 
-  // Slider controls
-  const scrollAmount = slider.clientWidth * 0.9;
-  document.getElementById('prev-btn').onclick = () => slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-  document.getElementById('next-btn').onclick = () => slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-</script>
+    // Slider controls
+    const scrollAmount = slider.clientWidth * 0.9;
+    document.getElementById('prev-btn').onclick = () => slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    document.getElementById('next-btn').onclick = () => slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  </script>
 </body>
 </html>
