@@ -196,4 +196,4 @@ img[src*="NewLogo1.png"] {
   /* CHANGE 2: Set footer to white and text to dark gray */
   background: black;
   color: var(--muted); 
-}
+} 
