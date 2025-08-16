@@ -36,12 +36,26 @@ body {
   padding: 1rem 0;
 }
 
+/* --- CORRECTED LOGO STYLES --- */
+/* This rule now targets the .logo class from your HTML */
+.logo {
+  max-width: 400px;  /* Sets a sensible maximum size on large screens */
+  width: 100%;       /* Ensures the logo shrinks to fit on smaller screens */
+  height: auto;      /* Maintains the aspect ratio as it resizes */
+  display: block;
+  margin: 0 auto;
+}
+
+/* We can remove the old, problematic rule now */
+/*
 img[src*="NewLogo1.png"] {
   height: auto;
   width: auto;
   display: block;
   margin: 0 auto;
 }
+*/
+
 
 /* --- Hero Section --- */
 .hero {
@@ -195,5 +209,5 @@ img[src*="NewLogo1.png"] {
   text-align: center;
   /* CHANGE 2: Set footer to white and text to dark gray */
   background: black;
-  color: var(--muted); 
-} 
+  color: var(--muted);
+}
