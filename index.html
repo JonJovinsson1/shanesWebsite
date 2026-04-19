@@ -2,98 +2,406 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shanes Concrete Services</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Concreter Perth WA | Driveways, Exposed Aggregate & Decorative Concrete</title>
+  <meta
+    name="description"
+    content="Perth concreter based north of the river, servicing suburbs from Two Rocks to Mandurah for driveways, exposed aggregate and decorative concrete. Call 0456 527 380 for a free quote."
+  />
+  <link rel="canonical" href="https://shanesconcreteservices.com/" />
+  <meta name="theme-color" content="#001bdd" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Shanes Concrete Services | Perth Concreter" />
+  <meta
+    property="og:description"
+    content="Perth concreter based north of the river, servicing suburbs from Two Rocks to Mandurah, including south-of-the-river jobs."
+  />
+  <meta property="og:url" content="https://shanesconcreteservices.com/" />
+  <meta property="og:image" content="https://shanesconcreteservices.com/gallery/re/1000001715.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Shanes Concrete Services | Perth Concreter" />
+  <meta
+    name="twitter:description"
+    content="Perth concreter based north of the river, servicing suburbs from Two Rocks to Mandurah, including south-of-the-river jobs."
+  />
+  <meta name="twitter:image" content="https://shanesconcreteservices.com/gallery/re/1000001715.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="icon" href="/logos/NewLogo1.png" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "HomeAndConstructionBusiness",
+          "@id": "https://shanesconcreteservices.com/#business",
+          "name": "Shanes Concrete Services",
+          "url": "https://shanesconcreteservices.com/",
+          "telephone": "+61 456 527 380",
+          "logo": "https://shanesconcreteservices.com/logos/NewLogo1.png",
+          "image": "https://shanesconcreteservices.com/gallery/re/1000001715.jpg",
+          "description": "Residential and commercial concreting services from Two Rocks to Mandurah, based north of the river and working south of the river as well.",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Perth WA"
+          },
+          "sameAs": [
+            "https://www.facebook.com/p/Shanes-Concrete-Services-100091208202583/"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://shanesconcreteservices.com/#website",
+          "url": "https://shanesconcreteservices.com/",
+          "name": "Shanes Concrete Services"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://shanesconcreteservices.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What concrete services do you provide in Perth?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Shanes Concrete Services handles concrete driveways, exposed aggregate, decorative finishes, alfresco areas, pathways, pool surrounds, resurfacing and other residential or commercial concrete work across Perth suburbs from Two Rocks to Mandurah."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you offer free quotes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Call 0456 527 380 to discuss the job, site access, finish options and timing for a free quote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you work both NOR and SOR?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Shanes Concrete Services is based north of the river and works across Perth suburbs from Two Rocks to Mandurah, including south-of-the-river jobs."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 <body>
-  <!-- Facebook SDK for JavaScript -->
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
-
-  <header class="site-header">
-    <div class="container header__inner">
-      <img src="/logos/NewLogo1.png" alt="Shanes Concrete Services Logo" class="logo">
-    </div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="container hero__inner">
-        <h1>Expert Solutions for Every Project</h1>
-        <p class="lead">Residential, commercial &amp; decorative concrete across Western Australia. Free quotes.</p>
-        <a href="tel:+61456527380" class="btn btn--primary">Call Now</a>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container header__inner">
+        <a class="brand" href="/" aria-label="Shanes Concrete Services home">
+          <img src="/logos/NewLogo1.png" alt="Shanes Concrete Services logo" class="brand__logo" />
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/services/">Services</a>
+          <a href="/concrete-driveways-perth/">Driveways</a>
+          <a href="/exposed-aggregate-perth/">Exposed Aggregate</a>
+          <a href="/gallery/">Gallery</a>
+          <a href="/contact/" class="site-nav__cta">Call Shane</a>
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <section id="services" class="container services">
-      <h2>Our Services</h2>
-        <p>
-        We provide a full range of concrete services including durable driveways, low-maintenance liquid limestone for pool surrounds and patios, high-gloss polished concrete, and elegant honed finishes. We also offer exposed aggregate for added texture and traction, coloured concrete in a variety of tones, and slip-resistant pool decks. Our team handles resurfacing and overlays to renew existing slabs, as well as structural slabs and foundations, cast-in-place or precast stairs and steps, and reinforced concrete for maximum strength.
-        </p>
-    </section>
+    <main>
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow">Perth Concreter | Driveways, Decorative &amp; Exposed Aggregate</p>
+            <h1>Concrete work built to look sharp and last.</h1>
+            <p class="hero__lede">
+              We are based north of the river and work across Perth suburbs from Two Rocks to Mandurah,
+              including driveways, exposed aggregate and decorative concrete.
+            </p>
+            <div class="hero__actions">
+              <a href="tel:+61456527380" class="btn btn--primary">Call Shane</a>
+              <a href="/gallery/" class="btn btn--ghost">View recent projects</a>
+            </div>
+            <ul class="hero__badges" aria-label="Highlights">
+              <li>Free quotes</li>
+              <li>Residential &amp; commercial</li>
+              <li>Decorative concrete specialists</li>
+            </ul>
+          </div>
+          <div class="hero__media">
+            <figure class="hero-card hero-card--image">
+              <img
+                src="/gallery/re/1000001715.jpg"
+                alt="Decorative polished concrete patio at a Perth home"
+                class="hero-card__photo"
+              />
+            </figure>
+            <div class="hero-card hero-card--stats">
+              <p class="stat-label">Popular project types</p>
+              <ul class="stat-list">
+                <li>Driveways</li>
+                <li>Exposed aggregate</li>
+                <li>Alfresco &amp; outdoor areas</li>
+                <li>Decorative concrete finishes</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="projects" class="container projects">
-      <h2>Recent Projects</h2>
-      <div class="project-slider" id="project-slider"></div>
-      <div class="slider-controls">
-        <button id="prev-btn" aria-label="Previous">&#10094;</button>
-        <button id="next-btn" aria-label="Next">&#10095;</button>
+      <section class="signal-strip">
+        <div class="container signal-strip__grid">
+          <article>
+            <p class="signal-strip__value">Based NOR</p>
+            <p class="signal-strip__label">Working north and south of the river</p>
+          </article>
+          <article>
+            <p class="signal-strip__value">Two Rocks to Mandurah</p>
+            <p class="signal-strip__label">Perth suburb coverage</p>
+          </article>
+          <article>
+            <p class="signal-strip__value">Recent local jobs</p>
+            <p class="signal-strip__label">See Shane's finished work</p>
+          </article>
+          <article>
+            <p class="signal-strip__value">Custom finishes</p>
+            <p class="signal-strip__label">From plain slabs to premium decorative concrete</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Services</p>
+            <h2>Concrete services for homes, outdoor spaces and hard-working slabs.</h2>
+            <p>
+              Whether you need a clean new driveway, exposed aggregate around an alfresco area, or
+              a decorative finish that lifts the whole property, the focus stays the same: good
+              prep, good levels and a finish that suits the site.
+            </p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <p class="service-card__kicker">Driveways</p>
+              <h3>Concrete driveways</h3>
+              <p>
+                Strong, tidy driveways designed for daily use with finishes that match the home and
+                access needs of the block.
+              </p>
+              <a href="/concrete-driveways-perth/" class="text-link">Learn more</a>
+            </article>
+            <article class="service-card">
+              <p class="service-card__kicker">Decorative</p>
+              <h3>Exposed aggregate</h3>
+              <p>
+                A premium finish for driveways, paths, pool surrounds and outdoor living areas,
+                combining texture, durability and street appeal.
+              </p>
+              <a href="/exposed-aggregate-perth/" class="text-link">Learn more</a>
+            </article>
+            <article class="service-card">
+              <p class="service-card__kicker">Feature finishes</p>
+              <h3>Polished and decorative concrete</h3>
+              <p>
+                Clean decorative finishes that elevate patios, entries and alfresco spaces with a
+                sharper, higher-end look.
+              </p>
+              <a href="/decorative-concrete-perth/" class="text-link">Learn more</a>
+            </article>
+            <article class="service-card">
+              <p class="service-card__kicker">Outdoor areas</p>
+              <h3>Paths, patios and pool surrounds</h3>
+              <p>
+                Practical concrete solutions for outdoor living, including textured and low-maintenance
+                finishes that feel right underfoot.
+              </p>
+              <a href="/services/" class="text-link">See all services</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark">
+        <div class="container">
+          <div class="section-heading section-heading--light">
+            <p class="eyebrow">Recent work</p>
+            <h2>See how our concrete comes up on real Perth jobs.</h2>
+            <p>
+              If you want to get a feel for the finish, edges and overall look, start with the recent
+              jobs below across driveways, exposed aggregate and decorative concrete.
+            </p>
+          </div>
+          <div class="gallery-grid gallery-grid--featured" data-gallery="featured"></div>
+          <div class="section-actions">
+            <a href="/gallery/" class="btn btn--secondary">Browse the full gallery</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container split-section">
+          <div>
+            <p class="eyebrow">Why people call us</p>
+            <h2>Straight answers, solid work and an easy way to get a quote.</h2>
+            <p class="section-copy">
+              If you are looking for a concreter, you usually want to know what kind of jobs we do,
+              where we work, and whether the finish will suit your place. We have kept that simple here,
+              and if it feels like the right fit you can give us a call and talk it through.
+            </p>
+            <div class="check-grid">
+              <div>
+                <h3>The right kind of work</h3>
+                <p>We handle driveways, exposed aggregate, decorative finishes and outdoor concrete across Perth.</p>
+              </div>
+              <div>
+                <h3>Easy to talk through</h3>
+                <p>Give us a call and we can run through the job, finish options, timing and access.</p>
+              </div>
+              <div>
+                <h3>Perth coverage</h3>
+                <p>We are based north of the river and happy to travel south, from Two Rocks right down to Mandurah.</p>
+              </div>
+              <div>
+                <h3>Recent local jobs</h3>
+                <p>You can see how our finished concrete actually comes up on completed work around Perth.</p>
+              </div>
+            </div>
+          </div>
+          <aside class="callout-panel">
+            <p class="callout-panel__eyebrow">Call us about</p>
+            <ul class="callout-list">
+              <li>New concrete driveways</li>
+              <li>Exposed aggregate upgrades</li>
+              <li>Outdoor entertaining areas</li>
+              <li>Decorative concrete finishes</li>
+              <li>Residential and commercial jobs</li>
+            </ul>
+            <a href="/contact/" class="btn btn--primary btn--full">Call us for a quote</a>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--accent">
+        <div class="container section-area">
+          <div class="section-heading">
+            <p class="eyebrow">Service area</p>
+            <h2>Based north of the river and servicing Perth from Two Rocks to Mandurah.</h2>
+            <p>
+              We are based north of the river and regularly work south of the river as well, covering
+              suburbs like Joondalup, Wanneroo, Hillarys, Scarborough, Balcatta, Morley, Canning Vale,
+              Cockburn, Rockingham and Mandurah.
+            </p>
+          </div>
+          <div class="area-pills" aria-label="Perth service areas">
+            <span>Two Rocks</span>
+            <span>Joondalup</span>
+            <span>Wanneroo</span>
+            <span>Hillarys</span>
+            <span>Scarborough</span>
+            <span>Balcatta</span>
+            <span>Morley</span>
+            <span>Canning Vale</span>
+            <span>Cockburn</span>
+            <span>Rockingham</span>
+            <span>Mandurah</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">FAQs</p>
+            <h2>Questions people usually ask before booking a concrete quote.</h2>
+          </div>
+          <div class="faq-list">
+            <details>
+              <summary>What kinds of concrete jobs do you take on?</summary>
+              <p>
+                We handle driveways, exposed aggregate, decorative concrete, pathways, outdoor areas,
+                resurfacing and general residential or commercial concrete work.
+              </p>
+            </details>
+            <details>
+              <summary>Do you offer free quotes across Perth?</summary>
+              <p>
+                Yes. The clearest next step is to call 0456 527 380 to talk through the job, finish
+                options and site details.
+              </p>
+            </details>
+            <details>
+              <summary>Do you service both NOR and SOR?</summary>
+              <p>
+                Yes. We are based north of the river and service south of the river too, covering
+                Perth suburbs from Two Rocks down to Mandurah.
+              </p>
+            </details>
+            <details>
+              <summary>Can you help with decorative and premium finishes?</summary>
+              <p>
+                Yes. Decorative finishes like exposed aggregate and polished-looking concrete are a
+                strong part of the work, especially around alfresco areas, entries and outdoor living spaces.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="container cta-band__inner">
+          <div>
+            <p class="eyebrow">Ready to talk about the job?</p>
+            <h2>Call now for a free quote on concrete work from Two Rocks to Mandurah.</h2>
+          </div>
+          <div class="cta-band__actions">
+            <a href="tel:+61456527380" class="btn btn--primary">Call Shane</a>
+            <a href="/contact/" class="btn btn--ghost">Contact Shane</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div>
+          <img src="/logos/NewLogo1.png" alt="Shanes Concrete Services logo" class="footer__logo" />
+          <p class="footer__copy">
+            Perth concreter based north of the river, servicing suburbs from Two Rocks to Mandurah, including SOR jobs.
+          </p>
+        </div>
+        <div>
+          <h2 class="footer__heading">Explore</h2>
+          <ul class="footer__links">
+            <li><a href="/services/">Services</a></li>
+            <li><a href="/gallery/">Gallery</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="footer__heading">Contact</h2>
+          <ul class="footer__links">
+            <li><a href="tel:+61456527380">0456 527 380</a></li>
+            <li><a href="https://www.facebook.com/p/Shanes-Concrete-Services-100091208202583/" target="_blank" rel="noreferrer">Facebook page</a></li>
+            <li>ABN: 54 612 829 365</li>
+          </ul>
+        </div>
       </div>
-    </section>
-
-    <!-- Facebook Page Embed Section -->
-    <section id="facebook-feed" class="container facebook-feed">
-      <h2>Follow Us on Facebook</h2>
-      <div class="fb-page" 
-           data-href="https://www.facebook.com/p/Shanes-Concrete-Services-100091208202583/" 
-           data-tabs="timeline" 
-           data-width="" 
-           data-height="" 
-           data-small-header="false" 
-           data-adapt-container-width="true" 
-           data-hide-cover="false" 
-           data-show-facepile="true">
-        <blockquote cite="https://www.facebook.com/p/Shanes-Concrete-Services-100091208202583/" class="fb-xfbml-parse-ignore">
-          <a href="https://www.facebook.com/p/Shanes-Concrete-Services-100091208202583/">Shanes Concrete Services</a>
-        </blockquote>
+      <div class="container footer__bottom">
+        <p>&copy; <span data-year></span> Shanes Concrete Services.</p>
       </div>
-    </section>
-    
-  </main>
+    </footer>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; <span id="year"></span> Shanes Concrete Services - 0456 527 380 - ABN: 54 612 829 365</p>
-      <p>Landing Page by <a href="https://jdml.com.au" target="_blank">JDML.com.au</a></p>
-    </div>
-  </footer>
+    <a class="mobile-call" href="tel:+61456527380">Call 0456 527 380</a>
+  </div>
 
-  <!-- Load image manifest -->
-  <script src="/gallery/gallery.js"></script>
-  <script>
-    const slider = document.getElementById('project-slider');
-
-    // Populate from manifest
-    (window.GALLERY_IMAGES || []).forEach(path => {
-      const fig = document.createElement('figure');
-      fig.className = 'project';
-      const caption = path
-        .replace(/^gallery\//, '')
-        .replace(/\.[^.]+$/, '')
-        .replace(/[\/_-]/g, ' ')
-        .replace(/\s+/g, ' ')
-        .trim();
-      fig.innerHTML = `
-        <img src="/${path}" alt="${caption}">
-        <figcaption>${caption}</figcaption>
-      `;
-      slider.appendChild(fig);
-    });
-
-    // Slider controls
-    const scrollAmount = slider.clientWidth * 0.9;
-    document.getElementById('prev-btn').onclick = () => slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-    document.getElementById('next-btn').onclick = () => slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  </script>
+  <script src="/gallery/gallery-data.js"></script>
+  <script src="/main.js"></script>
 </body>
 </html>
