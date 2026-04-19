@@ -731,10 +731,24 @@ h3 {
 }
 
 .footer__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.4rem;
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   color: var(--inverse-muted);
+}
+
+.footer__credit {
+  color: var(--white);
+}
+
+.footer__credit a {
+  color: var(--white);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
 }
 
 .mobile-call {
